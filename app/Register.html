@@ -9,13 +9,9 @@
             .form{
                 margin-left: 40%;
                 margin-top: 15%;
-                margin-right: 45%;
                
             }
 
-            .login-button{
-                margin-left: 40%;
-            }
 
         </style>
 
@@ -32,12 +28,24 @@
                 <br>
                 <input type="text" class="email" name="email" placeholder="Email Adress">
                 <br>
-                <input type="password" class="password" name="password" placeholder="Password">
+                <input type="password" class="password" name="password" placeholder="Password" id="pass">
+                <input type="checkbox" onclick="myFunction()">Show
                 <br>
-                <input type="submit" name="submit" value="Register" class="login-button">
+                <input type="submit" name="submit" value="Creat Account" class="regist-button">
                 <br>
                 <p class="link">Alredy have an account ?<a href="LogIn.html">Click to Login</a></p>
             </form>
+
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("pass");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+            </script>
     
     </body>
 </html>
