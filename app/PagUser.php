@@ -14,7 +14,8 @@
     <body style="background-color:darkgray; text-align: center;">
 
         <h1>Bem vindo/a à página de User</h1>
-        <p><a href="logout.php">Logout</a></p>
+        <h2></h2>
+        <h3><a href="logout.php">Logout</a><h3>
 
 
     </body>
