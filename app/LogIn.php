@@ -25,7 +25,7 @@
         <br>
         <input type="submit" name="submit" value="Log In" class="LogIn-button" style="border-radius: 5px; border-color:rgba(255, 255, 255, 0);">
         <br>
-        <p class="link">Don't have an account ?<a href="Register.html">Click to Register</a></p>
+        <p class="link">Don't have an account ?<a href="Register.php">Click to Register</a></p>
     </form>
 
     <script>

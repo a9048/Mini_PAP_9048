@@ -7,18 +7,18 @@
         <style>
 
             .form{
-                margin-left: 40%;
-                margin-top: 15%;
-               
+                padding-left: 40%;
+                padding-top: 15%;  
+                
             }
-
 
         </style>
 
 
     </head>
     <body style="background-color:darkgray;">
-            <form class="form" action="" method="post">
+        
+        <form class="form" action="" method="post">
                 <h1 class="login-title">Registration</h1>
                 <input type="text" class="name" name="name" placeholder="name" style="border-radius: 5px; border-color: rgba(255, 255, 255, 0);"  required />
                 <br>
@@ -33,9 +33,9 @@
                 <br>
                 <input type="submit" name="submit" value="Create Account" class="regist-button" style="border-radius: 5px; border-color: rgba(255, 255, 255, 0);">
                 <br>
-                <p class="link">Alredy have an account ?<a href="LogIn.html">Click to Login</a></p>
-            </form>
-
+                <p class="link">Alredy have an account ?<a href="LogIn.php">Click to Login</a></p>
+        </form>
+       
             <script>
                 function myFunction() {
                   var x = document.getElementById("pass");
