@@ -32,8 +32,8 @@
 
       require('config.php');
       require('BD_final.sql');
-      if($email == "a9048@oficina.pt"){
-        
+      if($email == 'a9048@oficina.pt' and $password == '123456789'){
+
       }else{
 
       }
