@@ -32,7 +32,7 @@
 
       require('config.php');
       require('BD_final.sql');
-      if($email == "a9048@oficina.pt"){
+      if($function == "admin"){
         
       }else{
 
