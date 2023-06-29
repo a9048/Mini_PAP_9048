@@ -23,7 +23,7 @@
                      VALUES ('$username', '$Name' , '$LastName' , '$email', '$password')";
         $result   = mysqli_query($con, $query);
         if ($result) {
-           //redirecionar para pagina log in
+            header('Location: '.$LogIn.php);
         } else {
         }
     }    

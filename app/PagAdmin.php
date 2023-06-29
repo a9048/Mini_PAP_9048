@@ -31,7 +31,7 @@
             </thead>
             <tbody> 
                 <?php
-                require('bd_final');
+                require('BD_final.sql');
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
                 ?>
