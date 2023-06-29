@@ -36,8 +36,8 @@
                         while ($row = $result->fetch_assoc()) {
                 ?>
                         <tr>
-                            <td><?php echo $row['First Name']; ?></td>
-                            <td><?php echo $row['Last Name']; ?></td>
+                            <td><?php echo $row['Name']; ?></td>
+                            <td><?php echo $row['LastName']; ?></td>
                             <td><?php echo $row['Username']; ?></td>
                             <td><?php echo $row['Email']; ?></td>
                             <td><?php echo $row['Password']; ?></td>
