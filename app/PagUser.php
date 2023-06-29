@@ -1,7 +1,3 @@
-<?php
-    //include auth_session.php file on all user panel pages
-    include("AutenticateSesh.php");
-?>
 
 <!DOCTYPE html>
 <html>
