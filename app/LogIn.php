@@ -28,6 +28,17 @@
         <p class="link">Don't have an account ?<a href="Register.php">Click to Register</a></p>
     </form>
 
+    <?php
+
+      require('config.php')
+      if($email == "a9048@oficina.pt"){
+        
+      }else{
+        
+      }
+
+    ?>
+
     <script>
       function myFunction() {
         var x = document.getElementById("pass");

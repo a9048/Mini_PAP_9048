@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,6 +31,7 @@
             </thead>
             <tbody> 
                 <?php
+                require('bd_final');
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
                 ?>

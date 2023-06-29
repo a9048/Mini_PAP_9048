@@ -6,26 +6,27 @@
         $username = stripslashes($_REQUEST['username']);
         //escapes special characters in a string
         $username = mysqli_real_escape_string($con, $username);
-        $email    = stripslashes($_REQUEST['email']);
-        $email    = mysqli_real_escape_string($con, $email);
+
+        $Name = stripslashes($_REQUEST['Name']);
+        $Name = mysqli_real_escape_string($con, $Name);
+
+        $LastName = stripslashes($_REQUEST['LastName']);
+        $LastName = mysqli_real_escape_string($con, $LastName);
+
+        $email = stripslashes($_REQUEST['email']);
+        $email = mysqli_real_escape_string($con, $email);
+
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
-        $query    = "INSERT into `users` (username, password, email, create_datetime)
-                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+
+        $query    = "INSERT into `BD_final` (username, Name, LastName, email, password)
+                     VALUES ('$username', '$Name' , '$LastName' , '$email', '$password')";
         $result   = mysqli_query($con, $query);
         if ($result) {
-            echo "<div class='form'>
-                  <h3>You are registered successfully.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a></p>
-                  </div>";
+           //redirecionar para pagina log in
         } else {
-            echo "<div class='form'>
-                  <h3>Required fields are missing.</h3><br/>
-                  <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
-                  </div>";
         }
-    } else {
-    }
+    }    
 ?>
 
 <!DOCTYPE html>
